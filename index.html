@@ -14,13 +14,14 @@
 </head>
 <body>
     <header>
-        <nav class="nav-container">
+        <nav class="nav-container" id="hero">
             <a href="#">
                 <img src="imagens/logo.png" alt="Logo Gesilane Teixeira" class="logo">
             </a>
             <div class="nav-links">
                 <a href="#hero">Início</a>
                 <a href="#cursos">Cursos</a>
+                <a href="#depoimentos">Depoimentos</a>
                 <a href="#contato">Contato</a>
             </div>
         </nav>
@@ -29,7 +30,7 @@
     <section class="hero">
         <div class="hero-content">
             <h1 class="scroll-reveal">Excelência em <span style="color: var(--destaque)">Nail Art</span></h1>
-            <p class="scroll-reveal">Domine as técnicas mais requisitadas do mercado com a metodologia exclusiva da mestre Gesilane Teixeira</p>
+            <p class="scroll-reveal">Domine as técnicas mais requisitadas do mercado com a metodologia exclusiva da designer Gesilane Teixeira</p>
             <div class="scroll-reveal">
                 <a href="#cursos" class="btn-curso">
                     <i class="fas fa-gem"></i> Descubra os Cursos
@@ -44,43 +45,49 @@
     <section id="cursos" class="cursos">
         <h2 class="section-title scroll-reveal">Formação Completa</h2>
         <div class="curso-grid">
+            <!-- Curso Iniciante -->
             <div class="curso-card scroll-reveal">
                 <div class="curso-header">
-                    <h3>Basic</h3>
-                    <p>Fundamentos Profissionais</p>
+                    <h3>Curso para Iniciantes</h3>
+                    <p>Naturalidade e excelência no início da sua carreira</p>
                 </div>
                 <div class="curso-body">
                     <div class="curso-preco">
                         <span>R$ 999,00</span>
-                        <p>ou 10x de R$ 99,90</p>
+                        <p>ou 10x c/ juros da maquininha</p>
                     </div>
                     <ul class="curso-lista">
-                        <li><i class="fas fa-check"></i>Alongamento de gel profissional</li>
-                        <li><i class="fas fa-check"></i>Técnicas de arquitetura básica</li>
-                        <li><i class="fas fa-check"></i>Manicure premium passo a passo</li>
-                        <li><i class="fas fa-check"></i>Kit profissional inicial</li>
+                        <li><i class="fas fa-check"></i> Molde F1, Molde Russo e Fibra de Vidro</li>
+                        <li><i class="fas fa-check"></i> Banho de Gel, Blindagem e Esmaltação em Gel</li>
+                        <li><i class="fas fa-check"></i> Manutenção e Remoção</li>
+                        <li><i class="fas fa-check"></i> Decorações Delicadas e Superficiais</li>
+                        <li><i class="fas fa-check"></i> Aula Teórica e Prática - 09:00 às 13:00 / 14:00 às 18:00</li>
+                        <li><i class="fas fa-check"></i> Coffee Break, Apostila Técnica e Suporte VIP</li>
                     </ul>
-                    <a href="#" class="btn-curso">
+                    <a href="https://wa.me/5535987021206?text=Ol%C3%A1%20Gesilane%2C%20como%20vai%3F%20Gostaria%20de%20Iniciar%20minha%20carreira%20como%20Nail%20Designer" class="btn-curso">
                         <i class="fas fa-arrow-right"></i> Iniciar Jornada
                     </a>
                 </div>
             </div>
-
+    
+            <!-- Curso Avançado -->
             <div class="curso-card scroll-reveal">
                 <div class="curso-header">
-                    <h3>Mastery Advanced</h3>
-                    <p>Técnicas Avançadas</p>
+                    <h3>Curso Avançado</h3>
+                    <p>Domine as técnicas de alto nível</p>
                 </div>
                 <div class="curso-body">
                     <div class="curso-preco">
-                        <span>R$ 1.497</span>
-                        <p>ou 12x de R$ 134,90</p>
+                        <span>R$ 999,00</span>
+                        <p>ou 10x c/ juros da maquininha</p>
                     </div>
                     <ul class="curso-lista">
-                        <li><i class="fas fa-check"></i>Escultura 3D complexa</li>
-                        <li><i class="fas fa-check"></i>Técnicas de luxo com folhas de ouro</li>
-                        <li><i class="fas fa-check"></i>Alongamento geométrico</li>
-                        <li><i class="fas fa-check"></i>Certificação internacional</li>
+                        <li><i class="fas fa-check"></i> Fibra de Vidro, Molde F1 e Molde Russo Avançado</li>
+                        <li><i class="fas fa-check"></i> Decoração Encapsulada e Francesas (Sorriso e Reversa)</li>
+                        <li><i class="fas fa-check"></i> Baby Boomer, Baby Gliter e Baby Colors</li>
+                        <li><i class="fas fa-check"></i> Aplicação de Folha de Ouro, Gel Spider e Pó Cromo</li>
+                        <li><i class="fas fa-check"></i> Formatos: Quadrada, Quadralina, Bailarina, Almond</li>
+                        <li><i class="fas fa-check"></i> Coffee Break, Certificado de Conclusão e Kit Aluno</li>
                     </ul>
                     <a href="#" class="btn-curso">
                         <i class="fas fa-arrow-right"></i> Evoluir Carreira
@@ -89,21 +96,109 @@
             </div>
         </div>
     </section>
+
+    <!-- Adicione esta seção após a seção de cursos e antes da seção de contato -->
+<section class="depoimentos" id="depoimentos">
+    <div class="depoimentos-container">
+        <h2 class="section-title scroll-reveal">Jornadas Transformadoras</h2>
+        <p class="section-subtitle scroll-reveal">Histórios reais de alunas que elevaram sua técnica ao nível master</p>
+
+        <!-- Slider main container -->
+        <div class="swiper depoimentosSwiper scroll-reveal">
+            <div class="swiper-wrapper">
+                <!-- Depoimento 1 -->
+                <div class="swiper-slide">
+                    <div class="depoimento-card">
+                        <div class="depoimento-header">
+                            <div class="cliente-info">
+                                <h4>Ana Carolina</h4>
+                                <p>Aluna Avançada</p>
+                                <div class="estrelas">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="depoimento-texto">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p>A metodologia da Gesilane mudou completamente minha abordagem com os clientes. Em 1 mês já tripliquei meus ganhos!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 2 -->
+                <div class="swiper-slide">
+                    <div class="depoimento-card">
+                        <div class="depoimento-header">
+                            <div class="cliente-info">
+                                <h4>Juliana Martins</h4>
+                                <p>Aluna Iniciante</p>
+                                <div class="estrelas">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="depoimento-texto">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p>Nunca imaginei que em poucas semanas conseguiria dominar técnicas tão complexas. A didática é incrível!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 3 -->
+                <div class="swiper-slide">
+                    <div class="depoimento-card">
+                        <div class="depoimento-header">
+                            <div class="cliente-info">
+                                <h4>Ana Carolina</h4>
+                                <p>Aluna Avançada</p>
+                                <div class="estrelas">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="depoimento-texto">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p>A metodologia da Gesilane mudou completamente minha abordagem com os clientes. Em 1 mês já tripliquei meus ganhos!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adicione mais depoimentos conforme necessário -->
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+</section>
+
     <section id="contato" class="contato">
         <div class="contato-container">
             <h2 class="section-title scroll-reveal">Conecte-se Comigo</h2>
             
             <div class="social-grid scroll-reveal">
                 <!-- WhatsApp -->
-                <a href="https://wa.me/SEUNUMERO" class="social-item whatsapp" target="_blank">
+                <a href="https://wa.me/35987021206" class="social-item whatsapp" target="_blank">
                     <i class="fab fa-whatsapp"></i>
-                    <span>WhatsApp Profissional</span>
+                    <span>WhatsApp</span>
                 </a>
     
                 <!-- Instagram -->
-                <a href="https://instagram.com/SEUPERFIL" class="social-item instagram" target="_blank">
+                <a href="https://www.instagram.com/gesilaneteixeiranails/" class="social-item instagram" target="_blank">
                     <i class="fab fa-instagram"></i>
-                    <span>@seuinstagram</span>
+                    <span>@gesilaneteixeiranails</span>
                 </a>
     
                 <!-- Telefone -->
@@ -111,17 +206,12 @@
                     <i class="fas fa-phone-alt"></i>
                     <div>
                         <span>Agendamento Direct</span>
-                        <p>(XX) XXXX-XXXX</p>
+                        <p>(35) 98702-1206</p>
                     </div>
                 </div>
             </div>
     
-            <div class="whatsapp-cta scroll-reveal">
-                <p>Prefere um atendimento direto?</p>
-                <a href="https://wa.me/SEUNUMERO" class="btn-whatsapp" target="_blank">
-                    <i class="fab fa-whatsapp"></i> Iniciar Conversa
-                </a>
-            </div>
+            
         </div>
     </section>
     <footer class="footer">
@@ -131,9 +221,9 @@
                 <div class="footer-col scroll-reveal">
                     <img src="imagens/logo.png" alt="Logo" class="footer-logo">
                     <div class="social-links">
-                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://pinterest.com" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="https://wa.me/35987021206" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/gesilaneteixeiranails/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:seuemail@exemplo.com"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
     
@@ -141,9 +231,9 @@
                 <div class="footer-col scroll-reveal">
                     <h4>Navegação</h4>
                     <ul>
+                        <li><a href="#hero">Início</a></li>
                         <li><a href="#cursos">Cursos</a></li>
-                        <li><a href="#metodologia">Metodologia</a></li>
-                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
                     </ul>
                 </div>
     
@@ -151,9 +241,9 @@
                 <div class="footer-col scroll-reveal">
                     <h4>Contato</h4>
                     <ul class="footer-contact">
-                        <li><i class="fas fa-phone-alt"></i> (XX) XXXX-XXXX</li>
+                        <li><i class="fas fa-phone-alt"></i> (35) 8702-1206</li>
                         <li><i class="fas fa-envelope"></i> email@profissional.com</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Cidade, Estado</li>
+                        <li><i class="fas fa-map-marker-alt"></i> São João Batista do Glória, MG</li>
                     </ul>
                 </div>
             </div>

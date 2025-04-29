@@ -47,6 +47,7 @@ header {
     margin: 0 auto;
 }
 
+
 .logo {
     width: 180px;
     transition: transform 0.3s;
@@ -83,7 +84,7 @@ header {
 /* Hero Section */
 .hero {
     padding: 180px 5% 100px;
-    height: 100vh;
+    height: 85vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -138,7 +139,7 @@ h1::after {
 
 /* Cursos Section */
 .cursos {
-    padding: 6rem 5%;
+    padding: 2rem 5%;
     background: var(--fundo-section);
     border-top: 1px solid rgba(184, 159, 101, 0.1);
     border-bottom: 1px solid rgba(184, 159, 101, 0.1);
@@ -195,7 +196,7 @@ h2::before {
 }
 
 .curso-header {
-    padding: 2rem;
+    padding: 1.5rem;
     background: linear-gradient(135deg, var(--destaque) 0%, var(--dourado-claro) 100%);
     color: var(--branco);
     position: relative;
@@ -232,7 +233,7 @@ h2::before {
     font-size: 2.2rem;
     font-weight: 700;
     color: var(--destaque);
-    margin: 1.5rem 0;
+    margin: 0;
 }
 
 .curso-lista {
@@ -295,9 +296,119 @@ h2::before {
     left: 100%;
 }
 
+/* Seção Depoimentos */
+.depoimentos {
+    padding: 3rem 5%;
+    background: var(--fundo-section);
+    position: relative;
+    border-bottom: 1px solid rgba(184, 159, 101, 0.1);
+}
+
+.depoimentos-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--texto);
+    margin-bottom: 4rem;
+}
+
+.depoimento-card {
+    background: var(--branco);
+    border-radius: 20px;
+    padding: 2.5rem;
+    border: 2px solid var(--bege);
+    margin: 1rem;
+    box-shadow: 0 15px 40px rgba(184, 159, 101, 0.1);
+}
+
+.depoimento-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.depoimento-header img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--destaque);
+}
+
+.cliente-info h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--texto);
+    margin-bottom: 0.3rem;
+}
+
+.cliente-info p {
+    font-size: 0.9rem;
+    color: var(--destaque);
+    margin-bottom: 0.5rem;
+}
+
+.estrelas {
+    color: var(--destaque);
+    font-size: 0.9rem;
+}
+
+.depoimento-texto {
+    position: relative;
+    padding: 1.5rem;
+    background: var(--bege);
+    border-radius: 15px;
+}
+
+.depoimento-texto p {
+    font-style: italic;
+    color: var(--texto);
+    line-height: 1.6;
+}
+
+.quote-icon {
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    font-size: 2.5rem;
+    color: var(--destaque);
+    opacity: 0.3;
+}
+
+/* Customização do Swiper */
+.depoimentosSwiper {
+    padding: 2rem 0 4rem;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--destaque) !important;
+    top: 40% !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 1.8rem !important;
+}
+
+.swiper-pagination-bullet {
+    background: var(--bege-escuro) !important;
+    opacity: 0.5 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--destaque) !important;
+    opacity: 1 !important;
+}
+
 /* Contato Section */
 .contato {
-    padding: 6rem 5%;
+    padding: 3rem 5%;
     background: var(--branco);
     text-align: center;
 }
@@ -379,8 +490,7 @@ h2::before {
 /* Footer */
 .footer {
     background: var(--branco);
-    padding: 4rem 5% 2rem;
-    border-top: 2px solid var(--bege-escuro);
+    padding: 2rem 5% 2rem;
 }
 
 .footer-grid {
@@ -422,7 +532,7 @@ h2::before {
 
 .social-links a {
     color: var(--texto);
-    background: var(--bege-escuro);
+    border: 1px solid #555;
     padding: 12px;
     border-radius: 50%;
     width: 45px;
@@ -436,6 +546,7 @@ h2::before {
 
 .social-links a:hover {
     color: var(--destaque);
+    border: 1px solid var(--destaque);
     transform: translateY(-3px);
 }
 
@@ -568,3 +679,4 @@ h2::before {
         justify-content: center;
     }
 }
+
