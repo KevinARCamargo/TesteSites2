@@ -53,6 +53,10 @@ header {
     transition: transform 0.3s;
 }
 
+.logo-mobile{
+    display: none;
+}
+
 .nav-links {
     display: flex;
     gap: 2rem;
@@ -79,6 +83,10 @@ header {
 
 .nav-links a:hover::after {
     width: 100%;
+}
+
+.menu-toggle{
+    display: none;
 }
 
 /* Hero Section */
@@ -635,49 +643,4 @@ h2::before {
     transform: translateY(0);
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        padding-top: 120px;
-        text-align: center;
-    }
-
-    h1 {
-        font-size: 2.8rem;
-    }
-
-    h2 {
-        font-size: 2.2rem;
-    }
-
-    .hero-image {
-        margin-top: 3rem;
-        max-width: 400px;
-    }
-
-    .curso-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .social-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .social-item {
-        padding: 1.5rem;
-    }
-
-    .footer-grid {
-        text-align: center;
-    }
-    
-    .social-links {
-        justify-content: center;
-    }
-    
-    .footer-contact li {
-        justify-content: center;
-    }
-}
 

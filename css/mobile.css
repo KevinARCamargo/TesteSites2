@@ -1,0 +1,275 @@
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        width: 100%;
+        padding: 0;
+        padding-right: 15px;
+        background: var(--branco);
+        border-bottom: 1px solid var(--bege);
+        backdrop-filter: blur(15px);
+        z-index: 1000;
+        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+
+    .logo {
+        display: none;
+    }
+
+    .logo-mobile{
+        display: block;
+        width: 50px;
+        transition: transform 0.3s;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: var(--texto);
+        font-weight: 500;
+        position: relative;
+        padding: 5px 0;
+    }
+
+    .nav-links a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: var(--bege-escuro);
+        transition: width 0.3s;
+    }
+
+    .nav-links a:hover::after {
+        width: 100%;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end; 
+        align-items: center; 
+        padding: 0.3rem 1rem;
+    }
+    
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 0.75rem; 
+        height: 0.75rem;
+        cursor: pointer;
+        position: static;
+        z-index: 1000; /* Garante que o botão fique acima do menu */
+    }
+    
+    .menu-toggle img{
+        margin: 0;
+        padding: 0;
+        width: 2.3rem;
+    }
+    
+    .nav-links {
+        display: flex; 
+        flex-direction: column;
+        align-items: right;
+        background-color: white;
+        position: fixed;
+        top: 3.8rem;
+        right: 0;
+        width: 40%;
+        height: auto;
+        padding: 1rem 1rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        z-index: 1001;
+        transform: translateX(100%); 
+        transition: transform 0.3s ease; 
+    }
+    
+    .nav-links.show {
+        transform: translateX(0); 
+    }
+    
+    .nav-links li {
+        list-style: none; 
+        margin: 0.5rem 0; 
+        padding: 0.5rem; 
+         
+    }
+    
+    .nav-links li:hover {
+        transform: scale(1.05); 
+        border-radius: 5px; 
+    }
+    
+    .nav-links a {
+        text-decoration: none; 
+        color: #B89F65; 
+        font-size: 1.1rem; 
+        font-weight: 600; 
+        background-color: white;
+    }
+    
+    
+
+
+    /* Hero Section */
+    .hero {
+        width: 100vw;
+        padding: 0;
+        height: 93.2vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background: linear-gradient(135deg, var(--branco) 50%, var(--fundo-section) 50%);
+    }
+
+    .hero-content {
+        flex: 1;
+        width: 100vw;
+        padding: 10vw;
+        animation: slideIn 1s ease-out;
+        justify-content: center;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 1.8rem;
+        position: relative;
+    }
+
+    h1::after {
+        content: '';
+        position: absolute;
+        bottom: -15px;
+        margin: 0;
+        width: 80px;
+        height: 3px;
+        background: var(--destaque);
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        max-width: 500px;
+        margin-bottom: 2.5rem;
+        color: #666;
+    }
+
+    .hero-image {
+        flex: 1;
+        max-width: 600px;
+        height: 80vh;
+        position: relative;
+    }
+
+    .hero-image img {
+        width: 500px;
+        height: 500px;
+        border-radius: 20px;
+        box-shadow: 0 25px 50px rgba(184, 159, 101, 0.15);
+        border: 3px solid var(--bege);
+        
+    }
+
+
+    /*Cursos*/
+    .cursos {
+        padding: 3rem 5% 1rem;
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+    }
+    
+    /*Rodapé*/
+    .footer {
+        padding: 0rem 5%;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-col {
+        text-align: center;
+    }
+
+    .footer-logo {
+        width: 120px;
+        margin: 0 auto 1.5rem;
+    }
+
+    .social-links {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .social-links a {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    .footer-col h4 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .footer-col h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-contact li {
+        justify-content: center;
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .footer-col ul {
+        padding: 0;
+    }
+
+    .footer-col li {
+        margin-bottom: 0.6rem;
+    }
+
+    .copyright {
+        padding-top: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .copyright p {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+
+    #s1{
+        display: none;
+    }
+
+    #s2{
+        display: none;
+    }
+    
+} 
