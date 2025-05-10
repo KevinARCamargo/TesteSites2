@@ -145,6 +145,10 @@ h1::after {
     
 }
 
+.hero-mob{
+    display: none;
+}
+
 /* Cursos Section */
 .cursos {
     padding: 2rem 5%;
