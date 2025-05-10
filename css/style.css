@@ -8,6 +8,10 @@
     --fundo-section: #FDFDFD;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +22,6 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--branco);
     color: var(--texto);
-    overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -34,9 +37,15 @@ header {
     padding: 1rem 5%;
     background: var(--branco);
     border-bottom: 2px solid var(--bege);
-    backdrop-filter: blur(15px);
-    z-index: 1000;
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    transition: all 0.3s ease;
+}
+
+header.scrolled {
+    padding: 0.5rem 5%;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 .nav-container {
@@ -47,10 +56,13 @@ header {
     margin: 0 auto;
 }
 
-
 .logo {
     width: 180px;
     transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.02);
 }
 
 .logo-mobile{
