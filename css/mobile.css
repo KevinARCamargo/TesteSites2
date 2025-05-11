@@ -143,12 +143,64 @@
 
     /*Cursos*/
     .cursos {
-        padding: 3rem 5% 0rem;
-    }
-    
-    h2 {
-        font-size: 2.5rem;
-    }
+    padding: 1.5rem 5%; /* Redução do padding vertical */
+  }
+
+  h2 {
+    font-size: 2rem; /* Tamanho menor para mobile */
+    margin-bottom: 2.5rem; /* Espaçamento reduzido */
+  }
+
+  h2::before {
+    bottom: -15px; /* Ajuste na posição da linha decorativa */
+    width: 80px; /* Largura reduzida */
+  }
+
+  .curso-grid {
+    grid-template-columns: 1fr; /* Coluna única */
+    gap: 2rem; /* Espaçamento entre cards reduzido */
+    margin: 2.5rem auto; /* Margem reduzida */
+  }
+
+  .curso-card {
+    margin: 0 1rem; /* Margem lateral para evitar colapso com bordas */
+    border-width: 1px; /* Borda mais fina */
+  }
+
+  /* Desativa animações hover para mobile */
+  .curso-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .curso-header {
+    padding: 1rem; /* Padding reduzido */
+  }
+
+  .curso-body {
+    padding: 1.5rem; /* Padding interno reduzido */
+  }
+
+  .curso-preco span {
+    font-size: 1.8rem; /* Tamanho do preço reduzido */
+  }
+
+  .curso-lista li {
+    font-size: 0.9rem; /* Tamanho da fonte dos itens */
+    margin: 0.6rem 0; /* Espaçamento entre itens reduzido */
+  }
+
+  .fa-check {
+    font-size: 0.9rem; /* Ícone menor */
+  }
+
+  /* Ajustes nos botões para mobile */
+  .btn-curso {
+    width: 100%; /* Largura total */
+    padding: 1rem 1.5rem; /* Padding ajustado */
+    font-size: 0.9rem; /* Tamanho da fonte reduzido */
+  }
+
     
     /*Rodapé*/
     .footer {
