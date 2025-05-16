@@ -138,23 +138,23 @@ h1::after {
 .hero p {
     font-size: 1.3rem;
     line-height: 1.6;
-    max-width: 500px;
+    max-width: 550px;
     margin-bottom: 2.5rem;
     color: #666;
 }
 
 .hero-image {
     flex: 1;
-    max-width: 600px;
-    height: 80vh;
+    max-width: 500px;
     position: relative;
+    margin-top: -15vh;
 }
 
 .hero-image img {
     max-width: 100%; /* Imagem responsiva */
     height: auto;
     aspect-ratio: 1/1; 
-    border-radius: 5px;/* Mantém proporção */
+    border-radius: 10px;/* Mantém proporção */
 }
 
 .hero-mob{
